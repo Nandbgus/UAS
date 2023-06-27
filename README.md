@@ -2,7 +2,7 @@
 
 - Dijalankan pertama kali dengan menginputkan username :
 - menampilkan pilihan program :
-  - Persewaan Jet
+  - Melihat dari Jet
     - Model : (Free Flight, Glider A2, Rubber Power)
       - menampilkan beberapa pesawat dalam beberapa model :
         - Model Free Flight : Skyhawk, Firebird, Thunderbolt
@@ -10,4 +10,5 @@
         - Model Rubber Power : Spitfire, Cyclone, Dragonfly
     - Ketersediaan : percabangan jika apakah pesawat tersebut sudah dipesan atau belum
     - Menampilkan harga setiap model pesawat
+  - Memesan Jet
       
