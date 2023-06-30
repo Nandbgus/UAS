@@ -32,5 +32,5 @@ git push -u origin main
 ```
 
 Team Members :  
-@joofan 
+@jooofan 
 @Nandbgus
