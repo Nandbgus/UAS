@@ -18,7 +18,7 @@
     Menampilkan Output barang yang dipesan dalam bentuk tabel
   - Keluar dari Program
 
-/Team Members
+Team Members
 
 # Joofan
 
