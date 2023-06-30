@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>website Travel by Kelompok 2</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <head>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      />
+    </head>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <head>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      />
+    </head>
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <head>
+      <!-- Link Font Awesome -->
+      <script
+        src="https://kit.fontawesome.com/your-font-awesome-kit.js"
+        crossorigin="anonymous"
+      ></script>
+    </head>
+
+    <!-- custom css file cdn link  -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- header section starts  -->
+
+    <header class="header">
+      <a href="#" class="logo">
+        <i class="fas fa-plane-departure"></i> Nusantara Trip</a
+      >
+
+      <form action="" class="search-form">
+        <input
+          type="search"
+          name=""
+          placeholder="search here..."
+          id="searchBox"
+        />
+        <label for="searchBox" class="fas fa-search"></label>
+      </form>
+
+      <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-moon" id="theme-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+        <div class="fas fa-bars" id="menu-btn"></div>
+      </div>
+
+      <nav class="navbar">
+        <a href="#home">Berada</a>
+        <a href="#packages">Paket</a>
+        <a href="#services">service</a>
+        <a href="#pricing">Harga</a>
+        <a href="#review">review</a>
+        <a href="#contact">kontak</a>
+        <a href="#blogs">blog destinasi</a>
+      </nav>
+
+      <form action="" class="login-form">
+        <div class="inputBox">
+          <span>username:</span>
+          <input type="text" placeholder="Masukkan Username" />
+        </div>
+
+        <div class="inputBox">
+          <span>password:</span>
+          <input type="password" placeholder="Masukkan Password" />
+        </div>
+
+        <div class="remember">
+          <input type="checkbox" name="" id="login-remember" />
+          <label for="login-remember">remember me</label>
+        </div>
+
+        <input type="submit" class="btn" value="login" />
+      </form>
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+      <div class="image" data-aos="fade-down">
+        <img src="images/home-img.svg" alt="" />
+      </div>
+
+      <div class="content" data-aos="fade-up">
+        <h3>Menginspirasi Petualangan di Tanah Air</h3>
+        <p>
+          Web travel ini menyediakan fitur pencarian yang canggih, yang
+          memungkinkan pengguna untuk memfilter hasil pencarian berdasarkan
+          preferensi mereka, seperti harga, jadwal, fasilitas, dan ulasan
+          pengguna. Hal ini membantu pengguna dalam menemukan pilihan yang
+          paling sesuai dengan kebutuhan dan anggaran mereka.
+        </p>
+        <a href="#" class="btn">Jelajahi Sekarang</a>
+      </div>
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- filter form section starts  -->
+
+    <section class="form-container" data-aos="zoom-in">
+      <form action="">
+        <div class="inputBox">
+          <span class="fa-stack">
+            <i class="fas fa-bed fa-stack-1x"></i>
+            <i class="far fa-square fa-stack-2x"></i>
+          </span>
+          <span>Lokasi Hotel </span>
+          <input type="text" placeholder="Cari tempat" />
+        </div>
+
+        <div class="inputBox">
+          <span>Check in</span>
+          <input type="date" />
+        </div>
+
+        <div class="inputBox">
+          <span>Check out</span>
+          <input type="date" />
+        </div>
+
+        <input type="submit" value="Pesan Sekarang" class="btn" />
+      </form>
+    </section>
+
+    <!-- filter form section ends -->
+
+    <!-- packages section starts  -->
+
+    <section class="packages" id="packages">
+      <h1 class="heading"><span>Paket yang tersedia</span></h1>
+
+      <div class="box-container">
+        <div class="box" data-aos="fade-up">
+          <div class="image">
+            <img src="images/bali.jpg" alt="" />
+            <h3><i class="fas fa-map-marker-alt"></i> Pura Ulun Danu</h3>
+          </div>
+          <div class="content">
+            <div class="price">IDR 1.000.000 <span>IDR 1.500.000 </span></div>
+            <p>
+              Pura Ulun Danu Bali adalah sebuah pura air di pulau Bali,
+              Indonesia. Terletak di tepi danau Bratan, pura ini adalah salah
+              satu ikon budaya dan keagamaan yang paling terkenal di Bali. Pura
+              ini didedikasikan untuk Dewi Danu, dewi air dan kesuburan dalam
+              kepercayaan Hindu Bali.
+            </p>
+            <a href="#" class="btn"> Pesan Sekarang</a>
+          </div>
+        </div>
+
+        <div class="box" data-aos="fade-up">
+          <div class="image">
+            <img src="images/nusapenida.jpg" alt="" />
+            <h3><i class="fas fa-map-marker-alt"></i> Nusa Penida</h3>
+          </div>
+          <div class="content">
+            <div class="price">IDR 2.500.000 <span>IDR 3.000.000</span></div>
+            <p>
+              Nusa Penida adalah sebuah pulau yang terletak di sebelah tenggara
+              Bali, Indonesia. Pulau ini terkenal karena keindahan alamnya yang
+              memukau dan menjadi tujuan wisata yang populer di daerah tersebut.
+              Nusa Penida menawarkan pemandangan pantai yang spektakuler,
+              tebing-tebing karang yang menjulang tinggi, dan air laut yang
+              jernih dengan keanekaragaman hayati bawah laut yang mengagumkan.
+            </p>
+            <a href="#" class="btn"> Pesan Sekarang</a>
+          </div>
+        </div>
+
+        <div class="box" data-aos="fade-up">
+          <div class="image">
+            <img src="images/borobudur.jpg" alt="" />
+            <h3><i class="fas fa-map-marker-alt"></i> Candi Borobudur</h3>
+          </div>
+          <div class="content">
+            <div class="price">IDR 800.000 <span>IDR 1.100.000</span></div>
+            <p>
+              Borobudur adalah sebuah kompleks candi Buddha yang terletak di
+              Magelang, Jawa Tengah, Indonesia. Candi ini merupakan salah satu
+              keajaiban arsitektur dunia dan juga menjadi salah satu situs
+              warisan dunia UNESCO. Borobudur terkenal karena keindahan seni dan
+              simbolisme Budha yang terpancar dari setiap bagian bangunannya.
+            </p>
+            <a href="#" class="btn"> Pesan Sekarang</a>
+          </div>
+        </div>
+
+        <div class="box" data-aos="fade-up">
+          <div class="image">
+            <img src="images/gumul.jpg" alt="" />
+            <h3><i class="fas fa-map-marker-alt"></i> Simpang Lima Gumul</h3>
+          </div>
+          <div class="content">
+            <div class="price">IDR 500.000 <span>IDR 800.000</span></div>
+            <p>
+              Simpang Lima Gumul adalah sebuah kawasan wisata yang terletak di
+              Kota Kediri, Jawa Timur, Indonesia. Tempat ini terkenal sebagai
+              salah satu ikon wisata Kediri dan menjadi tujuan favorit bagi
+              wisatawan lokal maupun mancanegara yang mengunjungi daerah
+              tersebut.
+            </p>
+            <a href="#" class="btn"> Pesan Sekarang</a>
+          </div>
+        </div>
+
+        <div class="box" data-aos="fade-up">
+          <div class="image">
+            <img src="images/bromo.jpg" alt="" />
+            <h3><i class="fas fa-map-marker-alt"></i> Gunung Bromo</h3>
+          </div>
+          <div class="content">
+            <div class="price">IDR 1.000.000 <span>IDR 1.500.000</span></div>
+            <p>
+              Gunung Bromo adalah salah satu gunung berapi paling terkenal di
+              Indonesia. Gunung ini terletak di Taman Nasional Bromo Tengger
+              Semeru, Jawa Timur. Bromo menawarkan pemandangan alam yang
+              spektakuler dan menjadi tujuan wisata yang populer bagi para
+              pendaki dan wisatawan yang mencari petualangan dan keindahan alam.
+            </p>
+            <a href="#" class="btn"> Pesan Sekarang</a>
+          </div>
+        </div>
+
+        <div class="box" data-aos="fade-up">
+          <div class="image">
+            <img src="images/prambanan.jpg" alt="" />
+            <h3><i class="fas fa-map-marker-alt"></i> Candi Prambanan</h3>
+          </div>
+          <div class="content">
+            <div class="price">IDR 750.000<span>IDR 900.000</span></div>
+            <p>
+              Candi Prambanan adalah kompleks candi Hindu yang terletak di dekat
+              Yogyakarta, Jawa Tengah, Indonesia. Candi ini dianggap sebagai
+              salah satu keajaiban arsitektur dunia dan menjadi salah satu situs
+              warisan dunia UNESCO. Candi Prambanan dikenal karena keindahan
+              seni dan keagungan arsitekturnya yang menggambarkan kejayaan
+              Kerajaan Mataram Kuno.
+            </p>
+            <a href="#" class="btn"> Pesan Sekarang</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- packages section ends -->
+
+    <!-- services section starts  -->
+
+    <section class="services" id="services">
+      <h1 class="heading"><span>Service Kita</span></h1>
+
+      <div class="box-container">
+        <div class="box" data-aos="zoom-in">
+          <span>01</span>
+          <i class="fas fa-hotel"></i>
+          <h3>Berbagai Hotel Mewah</h3>
+          <p>
+            Hotel yang kami tawarkan terjangkau dan memiliki layanan yang bagus
+          </p>
+        </div>
+
+        <div class="box" data-aos="zoom-in">
+          <span>02</span>
+          <i class="fas fa-plane"></i>
+          <h3>Transportasi Yang Cepat</h3>
+          <p>Transportasi yang cepat dan terjangkau dengan layanan bagus</p>
+        </div>
+
+        <div class="box" data-aos="zoom-in">
+          <span>03</span>
+          <i class="fas fa-utensils"></i>
+          <h3>Makanan Dan Minuman</h3>
+          <p>
+            Makanan dan minuman yang disajikan memiliki cita rasa yang lezat
+          </p>
+        </div>
+
+        <div class="box" data-aos="zoom-in">
+          <span>04</span>
+          <i class="fas fa-globe"></i>
+          <h3>Diseluruh indonesia</h3>
+          <p>Menikmati keseruan keindahan destinasi wisata di indonesia</p>
+        </div>
+
+        <div class="box" data-aos="zoom-in">
+          <span>05</span>
+          <i class="fas fa-hiking"></i>
+          <h3>Petualangan Yang Baru</h3>
+          <p>Nikmati petualangan dan pengalaman baru bersama kami</p>
+        </div>
+
+        <div class="box" data-aos="zoom-in">
+          <span>01</span>
+          <i class="fas fa-bullhorn"></i>
+          <h3>Pemandu Wisata</h3>
+          <p>Dipandu oleh tour guide yang berpengalaman</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- services section ends -->
+
+    <!-- pricing section starts  -->
+
+    <section class="pricing" id="pricing">
+      <h1 class="heading"><span> Harga Paket </span></h1>
+
+      <div class="box-container">
+        <div class="box" data-aos="zoom-in-up">
+          <h3>basic plan</h3>
+          <div class="price">
+            <span>IDR</span>
+            <span class="amount">1.000.000</span>
+          </div>
+          <ul>
+            <li>5 Hari</li>
+            <li>Makan Dan Minum</li>
+            <li>Tour Guide</li>
+            <li>Asuransi</li>
+            <li>Hotel</li>
+          </ul>
+          <a href="#" class="btn">pilih paket</a>
+        </div>
+
+        <div class="box" data-aos="zoom-in-up">
+          <h3>standard plan</h3>
+          <div class="price">
+            <span>IDR</span>
+            <span class="amount">5.000.000</span>
+          </div>
+          <ul>
+            <li>10 Hari</li>
+            <li>Makan Dan Minum</li>
+            <li>Tour Guide</li>
+            <li>Asuransi</li>
+            <li>Hotel</li>
+          </ul>
+          <a href="#" class="btn">pilih paket</a>
+        </div>
+
+        <div class="box" data-aos="zoom-in-up">
+          <h3>premium plan</h3>
+          <div class="price">
+            <span>IDR</span>
+            <span class="amount">8.000.000</span>
+          </div>
+          <ul>
+            <li>15 Hari</li>
+            <li>Makan Dan Minuman</li>
+            <li>Tour Guide</li>
+            <li>Asuransi</li>
+            <li>Hotel</li>
+          </ul>
+          <a href="#" class="btn">pilih paket</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- pricing section ends -->
+
+    <!-- review section starts  -->
+
+    <section class="review" id="review">
+      <h1 class="heading"><span>Ulasan</span></h1>
+
+      <div class="swiper-container review-slider" data-aos="zoom-in">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide">
+            <img src="images/profile-1.jpg" alt="" />
+            <h3>Budianto</h3>
+            <p>
+              Keindahan alam yang luar biasa. Asik bisa ikut paket tour ke
+              lokasi ini supaya lebih mudah menikmati keindahan alamnya karena
+              perlu naik boat, lanjut naik mobil melewati jalan yg lumayan
+              terjal untuk bisa sampai ke lokasi.
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <img src="images/profile-1.jpg" alt="" />
+            <h3>Jofan Vernanda</h3>
+            <p>
+              Saya sangat puas dengan pengalaman menggunakan Nusantara Trip.
+              Mereka memiliki panduan wisata yang lengkap dan membantu dalam
+              merencanakan perjalanan. Saya suka adanya galeri foto yang memukau
+              yang memberikan gambaran nyata tentang destinasi yang saya minati.
+              Saya pasti akan menggunakan layanan mereka lagi di masa depan
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <img src="images/profile-1.jpg" alt="" />
+            <h3>Ilham Affandi</h3>
+            <p>
+              Nusantara Trip merupakan pilihan tepat untuk merencanakan liburan
+              di Nusantara. Saya sangat menghargai informasi detail tentang
+              setiap destinasi dan ulasan dari pelancong sebelumnya. Navigasi
+              situs web yang mudah membuat pengalaman saya jauh lebih nyaman.
+              Layanan pelanggan yang responsif juga layak diacungi jempol
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+
+          <div class="swiper-slide slide">
+            <img src="images/profile-1.jpg" alt="" />
+            <h3>Dika</h3>
+            <p>
+              Nusantara Trip memberikan panduan perjalanan yang informatif dan
+              mudah diakses. Saya menemukan banyak destinasi menarik di
+              Indonesia berkat situs web ini. Layanan pemesanan mereka juga
+              sangat membantu dalam merencanakan perjalanan saya. Rekomendasi
+              yang diberikan sangat akurat. Sangat direkomendasikan!
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- review section ends -->
+
+    <!-- contact section starts  -->
+
+    <section class="contact" id="contact">
+      <h1 class="heading"><span>Kontak</span></h1>
+
+      <form action="" data-aos="zoom">
+        <div class="inputBox">
+          <input type="text" placeholder="nama" data-aos="fade-up" />
+          <input type="email" placeholder="alamat email" data-aos="fade-up" />
+        </div>
+
+        <div class="inputBox">
+          <input type="number" placeholder="nomor" data-aos="fade-up" />
+          <input type="text" placeholder="Keterangan" data-aos="fade-up" />
+        </div>
+
+        <textarea
+          name=""
+          placeholder="Pesan kamu"
+          id=""
+          cols="30"
+          rows="10"
+          data-aos="fade-up"
+        ></textarea>
+
+        <input type="submit" value="Kirim Pesan" class="btn" />
+      </form>
+    </section>
+
+    <!-- contact section ends -->
+
+    <!-- blog section starts  -->
+
+    <section class="blogs" id="blogs">
+      <h1 class="heading"><span>Blog Destinasi </span></h1>
+
+      <div class="box-container">
+        <div class="box" data-aos="fade-up">
+          <div class="image">
+            <img src="images/blog-1.svg" alt="" />
+          </div>
+          <div class="content">
+            <h3>Dunia Menunggumu, Temukan Keindahannya</h3>
+            <a href="#" class="btn">Baca lebih lanjut</a>
+            <div class="icons">
+              <a href="#"> <i class="fas fa-calendar"></i> 26 jun, 2023 </a>
+              <a href="#"> <i class="fas fa-user"></i> by admin </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="box" data-aos="fade-up">
+          <div class="image">
+            <img src="images/blog-2.svg" alt="" />
+          </div>
+          <div class="content">
+            <h3>Meresapi Pesona Nusantara Lewat Petualanganmu</h3>
+            <a href="#" class="btn">Baca lebih lanjut</a>
+            <div class="icons">
+              <a href="#"> <i class="fas fa-calendar"></i> 12 jun, 2023 </a>
+              <a href="#"> <i class="fas fa-user"></i> by admin </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="box" data-aos="fade-up">
+          <div class="image">
+            <img src="images/blog-3.svg" alt="" />
+          </div>
+          <div class="content">
+            <h3>Jelajahi Pesona Nusantara, Keindahan Tanah Air Menanti</h3>
+            <a href="#" class="btn">Baca lebih lanjut</a>
+            <div class="icons">
+              <a href="#"> <i class="fas fa-calendar"></i> 16 jun, 2023 </a>
+              <a href="#"> <i class="fas fa-user"></i> by admin </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- blog section ends -->
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box" data-aos="fade-up">
+          <h3>Destinasi</h3>
+          <a href="#"> <i class="fas fa-map-marker-alt"></i> Jakarta </a>
+          <a href="#"> <i class="fas fa-map-marker-alt"></i> Bandung </a>
+          <a href="#"> <i class="fas fa-map-marker-alt"></i> Malang </a>
+          <a href="#"> <i class="fas fa-map-marker-alt"></i> Surabaya </a>
+          <a href="#"> <i class="fas fa-map-marker-alt"></i> Bali </a>
+        </div>
+
+        <div class="box" data-aos="fade-up">
+          <h3>links cepat</h3>
+          <a href="#"> <i class="fas fa-chevron-right"></i> Beranda </a>
+          <a href="#"> <i class="fas fa-chevron-right"></i> Paket </a>
+          <a href="#"> <i class="fas fa-chevron-right"></i> services </a>
+          <a href="#"> <i class="fas fa-chevron-right"></i> Harga </a>
+          <a href="#"> <i class="fas fa-chevron-right"></i> Review </a>
+          <a href="#"> <i class="fas fa-chevron-right"></i> Kontak </a>
+          <a href="#"> <i class="fas fa-chevron-right"></i> blogs Document </a>
+        </div>
+
+        <div class="box" data-aos="fade-up">
+          <h3>contact info</h3>
+          <a href="#"> <i class="fas fa-phone"></i> +6285736940911 </a>
+          <a href="#"> <i class="fas fa-phone"></i> +6281357460013 </a>
+          <a href="#">
+            <i class="fas fa-envelop"></i> NusantaraTrip@gmail.com
+          </a>
+          <a href="#">
+            <i class="fas fa-map-marker-alt"></i> Indonesia, Kediri - 64174
+          </a>
+        </div>
+
+        <div class="box" data-aos="fade-up">
+          <h3>Terhubung dengan kita</h3>
+          <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+          <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+          <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+          <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+          <a href="#"> <i class="fab fa-pinterest"></i> pinterest </a>
+        </div>
+      </div>
+
+      <div class="credit">dibuat <span>Kelompok 2</span> | Terimakasih!</div>
+    </section>
+
+    <!-- footer section ends -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+
+    <script>
+      AOS.init({
+        duration: 800,
+        delay: 400,
+      });
+    </script>
+  </body>
+</html>
