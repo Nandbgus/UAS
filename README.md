@@ -19,7 +19,5 @@
   - Keluar dari Program
 
 Team Members
-
-# Joofan
-
-# Nandbgus
+'Joofan'
+'Nandbgus'
