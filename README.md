@@ -1,17 +1,16 @@
-## Program Persewaan Jet
+<h1 align="center">Selamat datang di Persewaan Pesawat Jet 👋</h1>
 
- **Deskripsi Singkat**
->  Program yang berjalan untuk melakukan persewaan sebuah jet dengan beberapa model juga opsi, dimana terdapat berbagai menu seperti menampilkan model, juga pesawat yang ada, juga melihat ketersediaan pesawat.
+ ## Apa itu Sewa Jet ?
+Program yang berjalan untuk melakukan persewaan sebuah jet dengan beberapa model juga opsi, dimana terdapat berbagai menu seperti menampilkan model, juga pesawat yang ada, juga melihat ketersediaan pesawat.
 
 
-**Jalannya Program**
-- Dijalankan pertama kali dengan menginputkan username
+## Fitur yang tersedia
 - **menampilkan pilihan program :**
   - Melihat pilihan Jet
     - Model : (Free Flight, Glider A2, Rubber Power) :tada:
-       - [ ] **Model Free Flight** : Skyhawk, Firebird, Thunderbolt
-       - [ ] **Model Glider A2** : A2 Falcon Glide, A2 Swift Soarer, A2 SkyGlider
-       - [ ] **Model Rubber Power** : Spitfire, Cyclone, Dragonfly
+    -  **Model Free Flight** : Skyhawk, Firebird, Thunderbolt
+    -  **Model Glider A2** : A2 Falcon Glide, A2 Swift Soarer, A2 SkyGlider
+    -  **Model Rubber Power** : Spitfire, Cyclone, Dragonfly
     - Ketersediaan : percabangan jika apakah pesawat tersebut sudah dipesan atau belum
     - Menampilkan harga setiap model pesawat
   - Memesan Jet
@@ -22,6 +21,7 @@
     Menampilkan Output barang yang dipesan dalam bentuk tabel
   - Keluar dari Program
 
+## Git
 Some basic Git commands are:
 ```
 git clone https://github.com/Nandbgus/UAS.git
@@ -32,5 +32,5 @@ git push -u origin main
 ```
 
 Team Members :  
-@jooofan 
-@Nandbgus
+<a href="https://github.com/Jooofan"> @Joofan </a>
+<a href="https://github.com/Nandbgus"> @Nandbgus </a>
