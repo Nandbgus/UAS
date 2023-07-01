@@ -85,7 +85,35 @@ string chooseJetName()
     return jetName;
 }
 
+// Fungsi untuk memilih durasi penyewaan
+int chooseDuration()
+{
+    int durationChoice;
+    cout << "Silakan pilih paket durasi penyewaan:\n1. 1 hari\n2. 3 hari\n3. 7 hari" << endl;
+    cout << "Pilihan Durasi: ";
+    cin >> durationChoice;
+    switch (durationChoice)
+    {
+    case 1:
+    {
+        return 1;
+        break;
+    }
+    case 2:
+    {
+        return 3;
+        break;
+    }
+    case 3:
+    {
+        return 7;
+        break;
+    }
+    default:
+        return 1;
+    }
+}
+
 int main()
 {
-    
 }
