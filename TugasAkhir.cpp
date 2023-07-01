@@ -114,6 +114,29 @@ int chooseDuration()
     }
 }
 
+//Fungsi Struk Pembayaran
+void displayPaymentReceipt(const Jet jets[], int jetCount)
+{
+    cout << "\n============================== Struk Pembayaran ==============================" << endl;
+    cout << setw(15) << left << "Nama Pesawat" << setw(15) << "| Model" << setw(15) << "| Durasi" << setw(15) << "| Harga"
+         << "|" << endl;
+    cout << "-------------------------------------------------------------------------------" << endl;
+    int totalPrice = 0;
+    for (int i = 0; i < jetCount; i++)
+    {
+        if (jets[i].isBooked)
+        {
+            cout << setw(15) << left << jets[i].name << setw(15) << "| " + jets[i].model << setw(10) << left << "| " << jets[i].duration << " hari"
+                 << "| $" << jets[i].price * jets[i].duration << setw(15) << "| " << endl;
+            totalPrice += jets[i].price * jets[i].duration;
+        }
+    }
+    cout << "-------------------------------------------------------------------------------" << endl;
+    cout << left << "Total harga yang harus dibayar : $" << totalPrice << endl;
+    cout << "===============================================================================" << endl;
+}
+
 int main()
 {
+    
 }
