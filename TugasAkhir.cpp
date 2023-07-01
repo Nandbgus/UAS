@@ -114,7 +114,7 @@ int chooseDuration()
     }
 }
 
-//Fungsi Struk Pembayaran
+// Fungsi Struk Pembayaran
 void displayPaymentReceipt(const Jet jets[], int jetCount)
 {
     cout << "\n============================== Struk Pembayaran ==============================" << endl;
@@ -138,5 +138,93 @@ void displayPaymentReceipt(const Jet jets[], int jetCount)
 
 int main()
 {
-    
+    string username;
+    cout << "Selamat datang di Program Persewaan Jet!" << endl;
+    cout << "Silakan masukkan username Anda: ";
+    cin >> username;
+
+    Jet jets[MAX_JETS];
+    int jetCount = 0;
+
+    initializeJets(jets, jetCount);
+
+    cout << "\nHalo, " << username << "!" << endl;
+    cout << "Berikut adalah pilihan program Persewaan Jet:" << endl;
+
+    while (true)
+    {
+        int choice = chooseMenu();
+
+        switch (choice)
+        {
+        case 1:
+        {
+            string model = chooseModel();
+            displayJets(jets, jetCount, model);
+            break;
+        }
+        case 2:
+        {
+            string jetName = chooseJetName();
+            bool found = false;
+            int totalPrice = 0;
+            bool isInCart = false;
+
+            for (int i = 0; i < jetCount; i++)
+            {
+                if (jets[i].name == jetName)
+                {
+                    found = true;
+                    if (jets[i].isBooked && isInCart)
+                    {
+                        cout << "Pesawat " << jetName << " Kosong" << endl;
+                    }
+                    else
+                    {
+                        if (jets[i].isBooked)
+                        {
+                            cout << "Pesawat " << jetName << " sudah ada dalam keranjang." << endl;
+                        }
+                        else
+                        {
+                            jets[i].isBooked = true;
+                            jets[i].duration = chooseDuration();
+                            totalPrice += jets[i].price * jets[i].duration;
+                            cout << "Pesawat " << jetName << " berhasil dipesan!" << endl;
+                            isInCart = true;
+                        }
+                    }
+                    break;
+                }
+            }
+
+            if (!found)
+            {
+                cout << "Pesawat tidak ditemukan." << endl;
+            }
+            else if (found && isInCart)
+            {
+                cout << "Pesawat telah dimasukkan ke dalam keranjang, dengan total harga: $" << totalPrice << endl;
+            }
+            break;
+        }
+        case 3:
+            displayPaymentReceipt(jets, jetCount);
+            break;
+        case 4:
+            break;
+        default:
+            cout << "Pilihan tidak valid." << endl;
+            break;
+        }
+
+        if (choice == 4)
+        {
+            break;
+        }
+    }
+
+    cout << "\nTerima kasih telah menggunakan Program Persewaan Jet!" << endl;
+
+    return 0;
 }
