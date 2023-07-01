@@ -76,6 +76,16 @@ string chooseModel()
     }
 }
 
+// Fungsi untuk memilih pesawat yang ingin dipesan
+string chooseJetName()
+{
+    string jetName;
+    cout << "\nSilakan masukkan nama pesawat yang ingin dipesan: ";
+    cin >> jetName;
+    return jetName;
+}
+
 int main()
 {
+    
 }
