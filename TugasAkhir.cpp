@@ -31,6 +31,51 @@ void initializeJets(Jet jets[], int &jetCount)
     jets[jetCount++] = {"Dragonfly", "Rubber Power", false, 340, 0};
 }
 
+// Fungsi untuk menampilkan pesawat dalam suatu model
+void displayJets(const Jet jets[], int jetCount, const string &model)
+{
+    cout << "Pesawat Model " << model << " yang tersedia:" << endl;
+    for (int i = 0; i < jetCount; i++)
+    {
+        if (jets[i].model == model && !jets[i].isBooked)
+        {
+            cout << "- " << jets[i].name << ", dengan harga: $" << jets[i].price << "/hari" << endl;
+        }
+    }
+    cout << endl;
+}
+
+// Fungsi untuk memilih menu
+int chooseMenu()
+{
+    int choice;
+    cout << "\nMenu:\n1. Melihat Pilihan Pesawat Jet\n2. Memesan Jet\n3. Lihat Struk Pembayaran\n4. Keluar" << endl;
+    cout << "Pilihan Anda: ";
+    cin >> choice;
+    return choice;
+}
+
+// Fungsi untuk memilih model pesawat
+string chooseModel()
+{
+    cout << "\nPilihan Model Pesawat:\n1. Free Flight\n2. Glider A2\n3. Rubber Power" << endl;
+    int modelChoice;
+    cout << "Pilihan Model: ";
+    cin >> modelChoice;
+
+    switch (modelChoice)
+    {
+    case 1:
+        return "Free Flight";
+    case 2:
+        return "Glider A2";
+    case 3:
+        return "Rubber Power";
+    default:
+        return "";
+    }
+}
+
 int main()
 {
 }
