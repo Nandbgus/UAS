@@ -1,7 +1,7 @@
 #include <iostream>
 #include <iomanip>
 #include <string>
-
+#include <algorithm>
 using namespace std;
 
 // Batasan ukuran maksimum array pesawat
