@@ -53,6 +53,19 @@ void displayJets(const Jet jets[], int jetCount, const string &model)
     cout << endl;
 }
 
+// Fungsi untuk membandingkan harga dua pesawat
+bool compareJetPrice(const Jet &jet1, const Jet &jet2)
+{
+    return jet1.price < jet2.price;
+}
+
+//Fungsi untuk mengurutkan nilai dari terendah ke tertinggi
+void sortJetsByPrice(Jet jets[], int jetCount)
+{
+    sort(jets, jets + jetCount, compareJetPrice);
+    cout << "\nPesawat telah diurutkan berdasarkan harga dari terendah ke tertinggi." << endl;
+}
+
 // Fungsi untuk memilih menu
 int chooseMenu()
 {
@@ -167,6 +180,7 @@ int main()
         {
         case 1:
         {
+            sortJetsByPrice(jets, jetCount);
             string model = chooseModel();
             displayJets(jets, jetCount, model);
             break;
