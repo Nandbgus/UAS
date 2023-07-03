@@ -37,12 +37,20 @@ void displayJets(const Jet jets[], int jetCount, const string &model)
     cout << "Pesawat Model " << model << " yang tersedia:" << endl;
     for (int i = 0; i < jetCount; i++)
     {
-        if (jets[i].model == model && !jets[i].isBooked)
+        if (jets[i].model == model)
         {
-            cout << "- " << jets[i].name << ", dengan harga: $" << jets[i].price << "/hari" << endl;
+            cout << "- " << jets[i].name << ", dengan harga: $" << jets[i].price;
+            if (jets[i].isBooked)
+            {
+                cout << " (Disewa)" << endl;
+            }
+            else
+            {
+                cout << " (Tersedia)" << endl;
+            }
         }
     }
-    cout << endl;
+    cout << endl;
 }
 
 // Fungsi untuk memilih menu
